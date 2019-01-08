@@ -61,18 +61,21 @@ function querysearch(s){
     }
 
     $.ajax({
-        type: 'POST',
+        type: 'GET',
         url: searchAllUrl,
         crossDomain: true,
-        contentType: "application/json",
         dataType: "JSON",
-        data: JSON.stringify(postdata),
+        data: {
+            'query': postdata.query.query_string.query,
+            'region': postdata.query.query_string.fields,
+            'searchtype': 'paper'
+        },
         success: function (data) {
             $('.totalResult').html(data.hits.total);
             for(var i = 0; i < data.hits.hits.length; i++){
                 result += '<div class="resultItem">'
                     + '<div class="itemHead">'
-                    + '<a href="' + data.hits.hits[i]._source.url +'" class="title">' + data.hits.hits[i]._source.name + '</a>'
+                    + '<a href="detail.html?paperid=' + data.hits.hits[i]._source.paperid + '&searchtype=' + searchType + '" class="title">' + data.hits.hits[i]._source.name + '</a>'
                     + '<span class="divsion">-</span>'
                     + '<span class="fileType">'
                     + '<span class="label">会议：</span>'

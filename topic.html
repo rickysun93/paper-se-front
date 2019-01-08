@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Topic</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/result.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/echarts.js"></script>
+</head>
+<body>
+<div id="container" class="sideBarHide">
+    <div id="hd" class="ue-clear">
+        <div class="logo"></div>
+        <div class="inputArea">
+            <input type="text" class="searchInput" />
+            <input type="button" class="searchButton" />
+            <a class="advanced" href="advanced.html">高级搜索</a>
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="searchList">
+            <li class="searchItem current" id="paper">话题</li>
+            <!--<li class="searchItem">设计</li>-->
+            <!--<li class="searchItem">网页</li>-->
+            <!--<li class="searchItem">知道</li>-->
+            <!--<li class="searchItem">音乐</li>-->
+            <!--<li class="searchItem">图片</li>-->
+            <!--<li class="searchItem">视频</li>-->
+            <!--<li class="searchItem">地图</li>-->
+            <!--<li class="searchItem">百科</li>-->
+            <!--<li class="searchItem">文库</li>-->
+        </ul>
+    </div>
+    <div id="bd" class="ue-clear">
+        <div id="main" class="sideBarHide" style="padding-right: 515px">
+            <div class="resultArea">
+                <div class="resultList"></div>
+                <!-- 分页 -->
+                <!--<div class="pagination ue-clear"></div>-->
+                <!-- 相关搜索 -->
+                <!--<div class="dependSearch ue-clear">-->
+                <!--<h6>相关搜索</h6>-->
+                <!--<div class="searchList">-->
+                <!--<p>-->
+                <!--<a href="javascript:;">UI设计</a>-->
+                <!--<a href="javascript:;">UI设计师</a>-->
+                <!--<a href="javascript:;">图标设计</a>-->
+                <!--<a href="javascript:;">设计师</a>-->
+                <!--</p>-->
+                <!--<p>-->
+                <!--<a href="javascript:;">后台界面</a>-->
+                <!--<a href="javascript:;">管理系统界面</a>-->
+                <!--<a href="javascript:;">界面欣赏</a>-->
+                <!--<a href="javascript:;">交互设计</a>-->
+                <!--</p>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--结果中搜索-->
+                <!--<div class="inputArea searchInResult">-->
+                <!--<input type="text" class="searchInput" />-->
+                <!--<input type="button" class="searchButton" />-->
+                <!--<a class="inResult" javascript:;>在结果中搜索</a>-->
+                <!--</div>-->
+                <div id="graphword" style="width: 750px;height:400px;"></div>
+                <div id="graphevo" style="width: 750px;height:400px;"></div>
+            </div>
+            <div class="historyArea" style="margin-right:-512px;width:512px;">
+                <div class="mySearch">
+                    <!--<h6>话题热度</h6>-->
+                    <div id="graphhot" style="width: 500px;height:300px;"></div>
+                </div>
+                <div class="mySearch">
+                    <!--<h6>话题影响力</h6>-->
+                    <!--<ul class="historyList">-->
+                    <!--</ul>-->
+                    <div id="graphimp" style="width: 500px;height:300px;"></div>
+                </div>
+            </div>
+        </div><!-- End of main -->
+    </div><!--End of bd-->
+</div>
+
+<div id="foot">Copyright &copy;SJTU 版权所有</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/pagination.js"></script>
+<script type="text/javascript" src="js/domain.js"></script>
+<script type="text/javascript" src="js/topic.js"></script>
+</html>
